@@ -7,6 +7,6 @@ cost(apples)		-> 2;
 cost(pears)			-> 9;
 cost(milk)			->7.
 
-total([{What, N}|T])	-> cost(What) * N + total(T);
+total([{What, N}|T]) -> cost(What) * N + total(T);
 total([])	->	0.
 
